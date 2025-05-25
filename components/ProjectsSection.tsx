@@ -64,7 +64,7 @@ export default function ProjectsSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="project-card group relative bg-white rounded-2xl shadow-lg border overflow-hidden hover:shadow-2xl transition-all duration-500 h-full">
+              <div className="project-card bg-white rounded-2xl shadow-lg border overflow-hidden hover:shadow-2xl transition-all duration-500 h-full group">
                 <div className="relative">
                   <img
                     src={project.image}
