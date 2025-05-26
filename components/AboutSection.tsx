@@ -1,87 +1,113 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { GraduationCap, Award } from "lucide-react"
 
 export default function AboutSection() {
+  const technologies = [
+    "LangChain",
+    "OpenAI GPT",
+    "AutoGen",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "FastAPI",
+    "Vector Databases"
+  ]
+
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="animate-slide-up"
+    <section id="about" className="py-24">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 
+          className="text-2xl md:text-3xl font-bold mb-8 flex items-center"
+          style={{ color: 'var(--lightest-slate)' }}
+        >
+          <span 
+            className="font-mono text-lg mr-2"
+            style={{ color: 'var(--green)' }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="gradient-text">Me</span>
-            </h2>
-            <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
-              <p>
-                I am an AI Agentic Engineer focused on designing and deploying autonomous systems that reason, plan, and act toward complex goals. My work centers on building intelligent agents that go beyond static output—toward dynamic, iterative decision-making and real-world impact.
-              </p>
-              <p>
-                With a foundation in computer science and statistical data science, I engineer agents that integrate large language models with memory, tool-use, environment interaction, and long-term planning. My approach is informed by current research in multi-agent collaboration, reinforcement learning, and human-AI alignment.
-              </p>
-              <p>
-                I'm committed to developing agents that are robust, interpretable, and aligned with human values—capable of working alongside people to solve meaningful problems. This portfolio includes examples of research assistants, AI task managers, and multi-agent systems that reflect my ongoing exploration of autonomy, reasoning, and agency in AI.
-              </p>
-            </div>
+            01.
+          </span>
+          About Me
+          <div 
+            className="ml-6 h-px flex-1 max-w-xs"
+            style={{ backgroundColor: 'var(--lightest-navy)' }}
+          ></div>
+        </h2>
 
-            <div className="flex flex-wrap gap-4 mt-8">
-              <div className="bg-blue-50 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition-colors flex items-center">
-                <GraduationCap className="mr-2 h-4 w-4" />
-                MS Computer Science, Stanford
+        <div className="grid md:grid-cols-3 gap-12">
+          <div className="md:col-span-2">
+            <div 
+              className="text-lg leading-relaxed space-y-4"
+              style={{ color: 'var(--slate)' }}
+            >
+              <p>
+                Hello! I'm Alan, an AI Agentic Engineer focused on designing and deploying 
+                autonomous systems that reason, plan, and act toward complex goals with 
+                real-world impact.
+              </p>
+              
+              <p>
+                My journey in AI began with a fascination for systems that could think and 
+                act independently. Today, I specialize in creating multi-agent systems that 
+                can collaborate, learn, and adapt to solve complex problems autonomously.
+              </p>
+              
+              <p>
+                I'm particularly interested in the intersection of multi-agent collaboration 
+                and human-AI alignment, working to ensure that autonomous systems not only 
+                achieve their goals but do so in ways that benefit humanity.
+              </p>
+
+              <p>Here are a few technologies I've been working with recently:</p>
+              
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                {technologies.map((tech, index) => (
+                  <div key={index} className="flex items-center">
+                    <span 
+                      className="text-sm mr-2"
+                      style={{ color: 'var(--green)' }}
+                    >
+                      ▹
+                    </span>
+                    <span 
+                      className="font-mono text-sm"
+                      style={{ color: 'var(--slate)' }}
+                    >
+                      {tech}
+                    </span>
+                  </div>
+                ))}
               </div>
-              <div className="bg-purple-50 text-purple-600 px-4 py-2 rounded-full font-semibold hover:bg-purple-100 transition-colors flex items-center">
-                <Award className="mr-2 h-4 w-4" />
-                AI Excellence Award 2023
+            </div>
+          </div>
+
+          <div className="relative">
+            <div 
+              className="relative z-10 w-full max-w-xs mx-auto"
+            >
+              <div 
+                className="relative bg-center bg-cover rounded filter grayscale hover:grayscale-0 transition-all duration-300"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400')",
+                  aspectRatio: "1 / 1"
+                }}
+              >
+                <div 
+                  className="absolute inset-0 border-2 rounded translate-x-4 translate-y-4 -z-10"
+                  style={{ borderColor: 'var(--green)' }}
+                ></div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            {/* Professional workspace image */}
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                alt="Modern developer workspace with multiple monitors"
-                className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
-              />
-
-              {/* Floating Stats Cards */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-lg border"
-              >
-                <div className="text-3xl font-bold text-blue-600">50+</div>
-                <div className="text-gray-600 font-medium">AI Projects</div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="absolute -top-8 -right-8 bg-white p-6 rounded-xl shadow-lg border"
-              >
-                <div className="text-3xl font-bold text-purple-600">5M+</div>
-                <div className="text-gray-600 font-medium">Model Inferences</div>
-              </motion.div>
-            </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

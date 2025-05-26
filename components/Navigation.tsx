@@ -1,17 +1,14 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -20,11 +17,10 @@ export default function Navigation() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
-      setIsMobileMenuOpen(false)
     }
   }
 
-  const navLinks = [
+  const navItems = [
     { label: "About", id: "about" },
     { label: "Articles", id: "articles" },
     { label: "Projects", id: "projects" },
@@ -33,60 +29,48 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-gray-100"
-          : "bg-white/80 backdrop-blur-md border-b border-gray-100"
+          ? "backdrop-blur-md shadow-lg"
+          : ""
       }`}
+      style={{
+        backgroundColor: isScrolled ? 'rgba(10, 25, 47, 0.85)' : 'transparent'
+      }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">AR</span>
-          </div>
+      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="flex justify-between items-center py-4">
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="text-xl font-bold transition-colors"
+            style={{ color: 'var(--green)' }}
+          >
+            AR
+          </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-8">
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile Navigation */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-700 hover:text-blue-600"
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="font-mono text-sm transition-colors hover:text-green-400"
+                style={{ color: 'var(--lightest-slate)' }}
+              >
+                <span style={{ color: 'var(--green)' }}>
+                  0{index + 1}.
+                </span>{" "}
+                {item.label}
+              </button>
+            ))}
+            <a
+              href="/resume.pdf"
+              className="ml-4 px-4 py-2 font-mono text-sm border border-green-400 text-green-400 hover:bg-green-400/10 transition-all rounded"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+              Resume
+            </a>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   )

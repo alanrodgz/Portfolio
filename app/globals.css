@@ -5,31 +5,28 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 20 14.3% 4.1%;
-  --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
-  --primary: 207 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 60 4.8% 95.9%;
-  --secondary-foreground: 24 9.8% 10%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
-  --accent: 60 4.8% 95.9%;
-  --accent-foreground: 24 9.8% 10%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --ring: 20 14.3% 4.1%;
-  --radius: 0.5rem;
-  --chart-1: 12 76% 61%;
-  --chart-2: 173 58% 39%;
-  --chart-3: 197 37% 24%;
-  --chart-4: 43 74% 66%;
-  --chart-5: 27 87% 67%;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  
+  --background: var(--navy);
+  --foreground: var(--lightest-slate);
+  --card: var(--light-navy);
+  --card-foreground: var(--lightest-slate);
+  --primary: var(--green);
+  --primary-foreground: var(--navy);
+  --secondary: var(--lightest-navy);
+  --secondary-foreground: var(--lightest-slate);
+  --muted: var(--lightest-navy);
+  --muted-foreground: var(--slate);
+  --border: var(--lightest-navy);
+  --radius: 0.25rem;
 }
 
 .dark {
@@ -64,11 +61,25 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    background-color: var(--navy);
+    color: var(--slate);
+    line-height: 1.3;
+    counter-reset: section;
   }
   html {
     scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--lightest-slate);
+    font-weight: 600;
+  }
+  
+  ::selection {
+    background-color: var(--green-tint);
+    color: var(--green);
   }
 }
 
