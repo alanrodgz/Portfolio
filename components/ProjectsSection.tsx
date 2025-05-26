@@ -12,7 +12,7 @@ export default function ProjectsSection() {
       tech: ["React", "Node.js", "OpenAI", "Python", "FastAPI", "LangChain"],
       github: "",
       external: "https://www.aismartdating.com",
-      image: "/attached_assets/Screenshot 2025-05-25 at 4.27.03 PM.png"
+      image: "/wingman-ai-screenshot.png"
     }
   ]
 

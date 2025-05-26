@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  /* Dark theme (default) */
   --navy: #0a192f;
   --light-navy: #112240;
   --lightest-navy: #233554;
@@ -24,6 +25,20 @@
   
   --tab-height: 42px;
   --tab-width: 120px;
+}
+
+/* Light theme */
+:root.light {
+  --navy: #ffffff;
+  --light-navy: #f8f9fa;
+  --lightest-navy: #e9ecef;
+  --slate: #495057;
+  --light-slate: #343a40;
+  --lightest-slate: #212529;
+  --white: #000000;
+  --green: #0d6efd;
+  --green-tint: rgba(13, 110, 253, 0.1);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
 .dark {

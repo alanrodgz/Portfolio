@@ -1,5 +1,78 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_629038._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_f2915f._.js", {
 
+"[project]/components/ThemeToggle.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>ThemeToggle
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [app-client] (ecmascript) <export default as Sun>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [app-client] (ecmascript) <export default as Moon>");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+var _s = __turbopack_refresh__.signature();
+"use client";
+;
+;
+function ThemeToggle() {
+    _s();
+    const [isDark, setIsDark] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // Check for saved theme preference or default to dark
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'light' || !savedTheme && !prefersDark) {
+            setIsDark(false);
+            document.documentElement.classList.add('light');
+        }
+    }, []);
+    const toggleTheme = ()=>{
+        const newTheme = isDark ? 'light' : 'dark';
+        setIsDark(!isDark);
+        if (!isDark) {
+            document.documentElement.classList.remove('light');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.add('light');
+            localStorage.setItem('theme', 'light');
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onClick: toggleTheme,
+        className: "p-2 rounded transition-colors hover:bg-green-400/10",
+        style: {
+            color: 'var(--lightest-slate)',
+            border: '1px solid var(--green)',
+            backgroundColor: 'transparent'
+        },
+        title: `Switch to ${isDark ? 'light' : 'dark'} mode`,
+        children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+            className: "w-4 h-4"
+        }, void 0, false, {
+            fileName: "[project]/components/ThemeToggle.tsx",
+            lineNumber: 45,
+            columnNumber: 9
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+            className: "w-4 h-4"
+        }, void 0, false, {
+            fileName: "[project]/components/ThemeToggle.tsx",
+            lineNumber: 47,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/ThemeToggle.tsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+_s(ThemeToggle, "76OfTKswtlYfcyBWk5XLQJOYEek=");
+_c = ThemeToggle;
+var _c;
+__turbopack_refresh__.register(_c, "ThemeToggle");
+
+})()),
 "[project]/components/Navigation.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
 "use strict";
 
@@ -493,198 +566,144 @@ function AboutSection() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid md:grid-cols-3 gap-12 md:gap-16",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "md:col-span-2",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    color: 'var(--slate)',
-                                    fontSize: '20px'
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mb-4",
-                                        children: "Hello! My name is Alan and I enjoy creating things that live on the internet. My interest in AI development started back in 2020 when I decided to try building autonomous systems — turns out hacking together custom AI agents taught me a lot about machine learning and human-computer interaction!"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mb-4",
-                                        children: [
-                                            "Fast-forward to today, and I've had the privilege of building software for an",
-                                            ' ',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://www.aismartdating.com",
-                                                target: "_blank",
-                                                rel: "noopener noreferrer",
-                                                style: {
-                                                    color: 'var(--green)'
-                                                },
-                                                children: "AI-powered dating platform"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 50,
-                                                columnNumber: 17
-                                            }, this),
-                                            ", a",
-                                            ' ',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                style: {
-                                                    color: 'var(--green)'
-                                                },
-                                                children: "research laboratory"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 59,
-                                                columnNumber: 17
-                                            }, this),
-                                            ", and a",
-                                            ' ',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                style: {
-                                                    color: 'var(--green)'
-                                                },
-                                                children: "digital product studio"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 66,
-                                                columnNumber: 17
-                                            }, this),
-                                            ". My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mb-4",
-                                        children: [
-                                            "I also recently",
-                                            ' ',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9",
-                                                target: "_blank",
-                                                rel: "noopener noreferrer",
-                                                style: {
-                                                    color: 'var(--green)'
-                                                },
-                                                children: "published an article"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 78,
-                                                columnNumber: 17
-                                            }, this),
-                                            ' ',
-                                            "about building Wingman AI, which covers the technical and philosophical challenges of creating AI systems that enhance human relationships."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 76,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Here are a few technologies I've been working with recently:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "grid grid-cols-2 gap-0 mt-5 overflow-hidden list-none",
-                                        children: technologies.map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "relative pl-5 mb-2",
-                                                style: {
-                                                    fontFamily: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace',
-                                                    fontSize: '13px',
-                                                    color: 'var(--slate)'
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "absolute left-0 text-green-400",
-                                                        style: {
-                                                            color: 'var(--green)'
-                                                        },
-                                                        children: "▹"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/AboutSection.tsx",
-                                                        lineNumber: 103,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    tech
-                                                ]
-                                            }, index, true, {
-                                                fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            color: 'var(--slate)',
+                            fontSize: '20px'
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-4",
+                                children: "Hello! My name is Alan and I enjoy creating things that live on the internet. My interest in AI development started back in 2020 when I decided to try building autonomous systems — turns out hacking together custom AI agents taught me a lot about machine learning and human-computer interaction!"
+                            }, void 0, false, {
                                 fileName: "[project]/components/AboutSection.tsx",
                                 lineNumber: 39,
                                 columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/components/AboutSection.tsx",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative max-w-xs",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "block relative w-full",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "wrapper relative group",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "img relative border-2 border-solid rounded transition-all",
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-4",
+                                children: [
+                                    "Fast-forward to today, and I've had the privilege of building software for an",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.aismartdating.com",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
                                         style: {
-                                            borderColor: 'var(--green)',
-                                            borderRadius: 'var(--border-radius)'
+                                            color: 'var(--green)'
                                         },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: "/api/placeholder/300/300",
-                                            alt: "Headshot",
-                                            className: "relative border-0 w-full max-w-full align-middle rounded filter mix-blend-multiply grayscale contrast-100 transition-all group-hover:filter-none group-hover:mix-blend-normal",
-                                            style: {
-                                                borderRadius: 'var(--border-radius)'
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/AboutSection.tsx",
-                                            lineNumber: 126,
-                                            columnNumber: 19
-                                        }, this)
+                                        children: "AI-powered dating platform"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 119,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/AboutSection.tsx",
-                                    lineNumber: 118,
-                                    columnNumber: 15
-                                }, this)
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", a",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#",
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "research laboratory"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", and a",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#",
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "digital product studio"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 65,
+                                        columnNumber: 15
+                                    }, this),
+                                    ". My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/AboutSection.tsx",
+                                lineNumber: 46,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-4",
+                                children: [
+                                    "I also recently",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "published an article"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 15
+                                    }, this),
+                                    ' ',
+                                    "about building Wingman AI, which covers the technical and philosophical challenges of creating AI systems that enhance human relationships."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/AboutSection.tsx",
+                                lineNumber: 75,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: "Here are a few technologies I've been working with recently:"
                             }, void 0, false, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 117,
+                                lineNumber: 89,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                className: "grid grid-cols-2 gap-0 mt-5 overflow-hidden list-none",
+                                children: technologies.map((tech, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "relative pl-5 mb-2",
+                                        style: {
+                                            fontFamily: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace',
+                                            fontSize: '13px',
+                                            color: 'var(--slate)'
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "absolute left-0 text-green-400",
+                                                style: {
+                                                    color: 'var(--green)'
+                                                },
+                                                children: "▹"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AboutSection.tsx",
+                                                lineNumber: 102,
+                                                columnNumber: 19
+                                            }, this),
+                                            tech
+                                        ]
+                                    }, index, true, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/components/AboutSection.tsx",
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/components/AboutSection.tsx",
-                            lineNumber: 116,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/AboutSection.tsx",
+                        lineNumber: 38,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/components/AboutSection.tsx",
                     lineNumber: 37,
                     columnNumber: 9
@@ -986,7 +1005,7 @@ function ProjectsSection() {
             ],
             github: "",
             external: "https://www.aismartdating.com",
-            image: "/attached_assets/Screenshot 2025-05-25 at 4.27.03 PM.png"
+            image: "/wingman-ai-screenshot.png"
         }
     ];
     const otherProjects = [
@@ -1911,4 +1930,4 @@ __turbopack_refresh__.register(_c, "Home");
 })()),
 }]);
 
-//# sourceMappingURL=_629038._.js.map
+//# sourceMappingURL=_f2915f._.js.map
