@@ -4,105 +4,132 @@ import { motion } from "framer-motion"
 
 export default function AboutSection() {
   const technologies = [
+    "JavaScript (ES6+)",
+    "TypeScript", 
+    "React",
+    "Node.js",
+    "Python",
     "LangChain",
     "OpenAI GPT",
     "AutoGen",
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Node.js",
     "FastAPI",
     "Vector Databases"
   ]
 
   return (
-    <section id="about" className="py-24">
+    <section 
+      id="about" 
+      className="numbered-heading-section"
+      style={{ 
+        maxWidth: '900px',
+        margin: '0 auto',
+        padding: '100px 0'
+      }}
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 
-          className="text-2xl md:text-3xl font-bold mb-8 flex items-center"
-          style={{ color: 'var(--lightest-slate)' }}
-        >
-          <span 
-            className="font-mono text-lg mr-2"
-            style={{ color: 'var(--green)' }}
-          >
-            01.
-          </span>
-          About Me
-          <div 
-            className="ml-6 h-px flex-1 max-w-xs"
-            style={{ backgroundColor: 'var(--lightest-navy)' }}
-          ></div>
-        </h2>
+        <h2 className="numbered-heading">About Me</h2>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 md:gap-16">
           <div className="md:col-span-2">
-            <div 
-              className="text-lg leading-relaxed space-y-4"
-              style={{ color: 'var(--slate)' }}
-            >
-              <p>
-                Hello! I'm Alan, an AI Agentic Engineer focused on designing and deploying 
-                autonomous systems that reason, plan, and act toward complex goals with 
-                real-world impact.
+            <div style={{ color: 'var(--slate)', fontSize: '20px' }}>
+              <p className="mb-4">
+                Hello! My name is Alan and I enjoy creating things that live on the internet. 
+                My interest in AI development started back in 2020 when I decided to try 
+                building autonomous systems — turns out hacking together custom AI agents 
+                taught me a lot about machine learning and human-computer interaction!
               </p>
               
-              <p>
-                My journey in AI began with a fascination for systems that could think and 
-                act independently. Today, I specialize in creating multi-agent systems that 
-                can collaborate, learn, and adapt to solve complex problems autonomously.
+              <p className="mb-4">
+                Fast-forward to today, and I've had the privilege of building software for 
+                an{' '}
+                <a 
+                  href="https://www.aismartdating.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--green)' }}
+                >
+                  AI-powered dating platform
+                </a>
+                , a{' '}
+                <a 
+                  href="#" 
+                  style={{ color: 'var(--green)' }}
+                >
+                  research laboratory
+                </a>
+                , and a{' '}
+                <a 
+                  href="#" 
+                  style={{ color: 'var(--green)' }}
+                >
+                  digital product studio
+                </a>
+                . My main focus these days is building accessible, inclusive products and 
+                digital experiences for a variety of clients.
               </p>
               
-              <p>
-                I'm particularly interested in the intersection of multi-agent collaboration 
-                and human-AI alignment, working to ensure that autonomous systems not only 
-                achieve their goals but do so in ways that benefit humanity.
+              <p className="mb-4">
+                I also recently{' '}
+                <a 
+                  href="https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--green)' }}
+                >
+                  published an article
+                </a>
+                {' '}about building Wingman AI, which covers the technical and philosophical 
+                challenges of creating AI systems that enhance human relationships.
               </p>
 
               <p>Here are a few technologies I've been working with recently:</p>
               
-              <div className="grid grid-cols-2 gap-2 mt-4">
+              <ul className="grid grid-cols-2 gap-0 mt-5 overflow-hidden list-none">
                 {technologies.map((tech, index) => (
-                  <div key={index} className="flex items-center">
+                  <li 
+                    key={index} 
+                    className="relative pl-5 mb-2"
+                    style={{ 
+                      fontFamily: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace',
+                      fontSize: '13px',
+                      color: 'var(--slate)'
+                    }}
+                  >
                     <span 
-                      className="text-sm mr-2"
+                      className="absolute left-0 text-green-400"
                       style={{ color: 'var(--green)' }}
                     >
                       ▹
                     </span>
-                    <span 
-                      className="font-mono text-sm"
-                      style={{ color: 'var(--slate)' }}
-                    >
-                      {tech}
-                    </span>
-                  </div>
+                    {tech}
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
 
-          <div className="relative">
-            <div 
-              className="relative z-10 w-full max-w-xs mx-auto"
-            >
-              <div 
-                className="relative bg-center bg-cover rounded filter grayscale hover:grayscale-0 transition-all duration-300"
-                style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400')",
-                  aspectRatio: "1 / 1"
-                }}
-              >
+          <div className="relative max-w-xs">
+            <div className="block relative w-full">
+              <div className="wrapper relative group">
                 <div 
-                  className="absolute inset-0 border-2 rounded translate-x-4 translate-y-4 -z-10"
-                  style={{ borderColor: 'var(--green)' }}
-                ></div>
+                  className="img relative border-2 border-solid rounded transition-all"
+                  style={{ 
+                    borderColor: 'var(--green)',
+                    borderRadius: 'var(--border-radius)'
+                  }}
+                >
+                  <img
+                    src="/api/placeholder/300/300"
+                    alt="Headshot"
+                    className="relative border-0 w-full max-w-full align-middle rounded filter mix-blend-multiply grayscale contrast-100 transition-all group-hover:filter-none group-hover:mix-blend-normal"
+                    style={{ borderRadius: 'var(--border-radius)' }}
+                  />
+                </div>
               </div>
             </div>
           </div>
