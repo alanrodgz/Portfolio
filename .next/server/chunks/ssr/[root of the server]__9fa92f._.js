@@ -43,31 +43,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 const metadata = {
-    title: "Alex Chen - AI Agent Engineer | Professional Portfolio",
-    description: "Alex Chen, AI Agent Engineer with 5+ years of experience building intelligent systems. Specializing in multi-agent systems, conversational AI, and machine learning solutions.",
+    title: "Alan Rodriguez - AI Agent Engineer | Professional Portfolio",
+    description: "Alan Rodriguez, AI Agentic Engineer focused on designing and deploying autonomous systems that reason, plan, and act toward complex goals. Specializing in multi-agent collaboration and human-AI alignment.",
     keywords: [
         "AI Engineer",
         "Machine Learning",
         "AI Agents",
         "LangChain",
         "OpenAI",
-        "Software Development"
+        "Software Development",
+        "Autonomous Systems"
     ],
     authors: [
         {
-            name: "Alex Chen"
+            name: "Alan Rodriguez"
         }
     ],
     openGraph: {
-        title: "Alex Chen - AI Agent Engineer",
-        description: "Professional AI Engineer building next-generation intelligent systems and autonomous agents.",
+        title: "Alan Rodriguez - AI Agent Engineer",
+        description: "AI Agentic Engineer building autonomous systems that reason, plan, and act toward complex goals.",
         type: "website",
         locale: "en_US"
     },
     twitter: {
         card: "summary_large_image",
-        title: "Alex Chen - AI Agent Engineer",
-        description: "Professional AI Engineer building next-generation intelligent systems and autonomous agents."
+        title: "Alan Rodriguez - AI Agent Engineer",
+        description: "AI Agentic Engineer building autonomous systems that reason, plan, and act toward complex goals."
     }
 };
 function RootLayout({ children }) {

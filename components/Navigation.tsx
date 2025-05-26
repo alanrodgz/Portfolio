@@ -26,7 +26,7 @@ export default function Navigation() {
 
   const navLinks = [
     { label: "About", id: "about" },
-    { label: "Skills", id: "skills" },
+    { label: "Articles", id: "articles" },
     { label: "Projects", id: "projects" },
     { label: "Contact", id: "contact" },
   ]
@@ -42,7 +42,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">AC</span>
+            <span className="text-2xl font-bold gradient-text">AR</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -47,7 +47,7 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.chen@aiengine.dev",
+      value: "alanrodriigueez@gmail.com",
       bgColor: "bg-blue-50",
       iconColor: "text-blue-600",
     },

@@ -43,7 +43,7 @@ export default function HeroSection() {
           >
             <span className="text-gray-900">Hi, I'm</span>
             <br />
-            <span className="gradient-text">Alex Chen</span>
+            <span className="gradient-text">Alan Rodriguez</span>
           </motion.h1>
 
           <motion.p
@@ -52,8 +52,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            AI Agent Engineer crafting intelligent systems that bridge the gap
-            between human needs and artificial intelligence capabilities.
+            AI Agentic Engineer designing autonomous systems that reason, plan, 
+            and act toward complex goals with real-world impact.
           </motion.p>
 
           <motion.div

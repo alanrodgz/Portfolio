@@ -20,24 +20,13 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                I'm a passionate AI Agent Engineer with 5+ years of experience
-                building intelligent systems that solve real-world problems. My
-                expertise spans from natural language processing to computer
-                vision, with a focus on creating autonomous agents that can
-                think, learn, and adapt.
+                I am an AI Agentic Engineer focused on designing and deploying autonomous systems that reason, plan, and act toward complex goals. My work centers on building intelligent agents that go beyond static output—toward dynamic, iterative decision-making and real-world impact.
               </p>
               <p>
-                Currently, I lead AI initiatives at cutting-edge tech companies,
-                where I design and implement multi-agent systems, conversational
-                AI, and intelligent automation solutions that have processed
-                millions of interactions and improved operational efficiency by
-                over 40%.
+                With a foundation in computer science and statistical data science, I engineer agents that integrate large language models with memory, tool-use, environment interaction, and long-term planning. My approach is informed by current research in multi-agent collaboration, reinforcement learning, and human-AI alignment.
               </p>
               <p>
-                When I'm not coding AI systems, you'll find me contributing to
-                open-source projects, writing technical blogs, or exploring the
-                latest developments in artificial general intelligence and
-                machine consciousness.
+                I'm committed to developing agents that are robust, interpretable, and aligned with human values—capable of working alongside people to solve meaningful problems. This portfolio includes examples of research assistants, AI task managers, and multi-agent systems that reflect my ongoing exploration of autonomy, reasoning, and agency in AI.
               </p>
             </div>
 

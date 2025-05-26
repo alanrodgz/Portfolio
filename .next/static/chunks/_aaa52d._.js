@@ -42,8 +42,8 @@ function Navigation() {
             id: "about"
         },
         {
-            label: "Skills",
-            id: "skills"
+            label: "Articles",
+            id: "articles"
         },
         {
             label: "Projects",
@@ -66,7 +66,7 @@ function Navigation() {
                             className: "flex items-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-2xl font-bold gradient-text",
-                                children: "AC"
+                                children: "AR"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navigation.tsx",
                                 lineNumber: 45,
@@ -281,7 +281,7 @@ function HeroSection() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "gradient-text",
-                                    children: "Alex Chen"
+                                    children: "Alan Rodriguez"
                                 }, void 0, false, {
                                     fileName: "[project]/components/HeroSection.tsx",
                                     lineNumber: 46,
@@ -307,7 +307,7 @@ function HeroSection() {
                                 delay: 0.4
                             },
                             className: "text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed",
-                            children: "AI Agent Engineer crafting intelligent systems that bridge the gap between human needs and artificial intelligence capabilities."
+                            children: "AI Agentic Engineer designing autonomous systems that reason, plan, and act toward complex goals with real-world impact."
                         }, void 0, false, {
                             fileName: "[project]/components/HeroSection.tsx",
                             lineNumber: 49,
@@ -592,24 +592,24 @@ function AboutSection() {
                                 className: "space-y-6 text-lg text-gray-600 leading-relaxed",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "I'm a passionate AI Agent Engineer with 5+ years of experience building intelligent systems that solve real-world problems. My expertise spans from natural language processing to computer vision, with a focus on creating autonomous agents that can think, learn, and adapt."
+                                        children: "I am an AI Agentic Engineer focused on designing and deploying autonomous systems that reason, plan, and act toward complex goals. My work centers on building intelligent agents that go beyond static output—toward dynamic, iterative decision-making and real-world impact."
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
                                         lineNumber: 22,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Currently, I lead AI initiatives at cutting-edge tech companies, where I design and implement multi-agent systems, conversational AI, and intelligent automation solutions that have processed millions of interactions and improved operational efficiency by over 40%."
+                                        children: "With a foundation in computer science and statistical data science, I engineer agents that integrate large language models with memory, tool-use, environment interaction, and long-term planning. My approach is informed by current research in multi-agent collaboration, reinforcement learning, and human-AI alignment."
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 25,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "When I'm not coding AI systems, you'll find me contributing to open-source projects, writing technical blogs, or exploring the latest developments in artificial general intelligence and machine consciousness."
+                                        children: "I'm committed to developing agents that are robust, interpretable, and aligned with human values—capable of working alongside people to solve meaningful problems. This portfolio includes examples of research assistants, AI task managers, and multi-agent systems that reflect my ongoing exploration of autonomy, reasoning, and agency in AI."
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 36,
+                                        lineNumber: 28,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -628,14 +628,14 @@ function AboutSection() {
                                                 className: "mr-2 h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 46,
+                                                lineNumber: 35,
                                                 columnNumber: 17
                                             }, this),
                                             "MS Computer Science, Stanford"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 34,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -645,20 +645,20 @@ function AboutSection() {
                                                 className: "mr-2 h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 39,
                                                 columnNumber: 17
                                             }, this),
                                             "AI Excellence Award 2023"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 38,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 44,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -692,7 +692,7 @@ function AboutSection() {
                                     className: "rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutSection.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 54,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -718,7 +718,7 @@ function AboutSection() {
                                             children: "50+"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AboutSection.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 68,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -726,13 +726,13 @@ function AboutSection() {
                                             children: "AI Projects"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AboutSection.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AboutSection.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 61,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -758,7 +758,7 @@ function AboutSection() {
                                             children: "5M+"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AboutSection.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -766,24 +766,24 @@ function AboutSection() {
                                             children: "Model Inferences"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AboutSection.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 79,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AboutSection.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 71,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AboutSection.tsx",
-                            lineNumber: 64,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/AboutSection.tsx",
-                        lineNumber: 56,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1501,7 +1501,7 @@ function ContactSection() {
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"],
             title: "Email",
-            value: "alex.chen@aiengine.dev",
+            value: "alanrodriigueez@gmail.com",
             bgColor: "bg-blue-50",
             iconColor: "text-blue-600"
         },
