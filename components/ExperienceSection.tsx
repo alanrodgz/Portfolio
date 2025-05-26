@@ -19,7 +19,7 @@ export default function ExperienceSection() {
       ]
     },
     {
-      title: "Frontend Developer",
+      title: "AI Agentic Engineer",
       company: "Freelance",
       range: "2023 - 2024",
       url: "",
@@ -27,17 +27,6 @@ export default function ExperienceSection() {
         "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and React",
         "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
         "Clients included commercial and residential real estate companies, restaurant groups, and fitness studios"
-      ]
-    },
-    {
-      title: "Software Engineer",
-      company: "Previous Company",
-      range: "2022 - 2023",
-      url: "",
-      details: [
-        "Developed and shipped highly interactive web applications for diverse clients including Fortune 500 companies",
-        "Used various technologies including React, Vue, Node.js, and Python to build modern web applications",
-        "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences"
       ]
     }
   ]

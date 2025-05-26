@@ -36,7 +36,7 @@ export default function Navigation() {
           : ""
       }`}
       style={{
-        backgroundColor: isScrolled ? 'rgba(10, 25, 47, 0.85)' : 'transparent',
+        backgroundColor: isScrolled ? 'rgba(var(--navy-rgb), 0.85)' : 'transparent',
         height: isScrolled ? 'var(--nav-scroll-height)' : 'var(--nav-height)'
       }}
     >

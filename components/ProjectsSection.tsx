@@ -9,7 +9,7 @@ export default function ProjectsSection() {
     {
       title: "AI Wingman - Smart Dating Assistant",
       description: "An intelligent AI-powered dating assistant that helps users craft better conversations and improve their dating experience. Features personality analysis, conversation suggestions, and real-time coaching to enhance meaningful connections.",
-      tech: ["React", "Node.js", "OpenAI", "Python", "FastAPI", "LangChain"],
+      tech: ["Swift", "SwiftUI", "OpenAI", "Python", "FastAPI", "LangChain"],
       github: "",
       external: "https://www.aismartdating.com",
       image: "/wingman-ai-screenshot.png"
@@ -69,7 +69,9 @@ export default function ProjectsSection() {
                       style={{
                         borderRadius: 'var(--border-radius)',
                         filter: 'grayscale(100%) contrast(1) brightness(90%)',
-                        transition: 'var(--transition)'
+                        transition: 'var(--transition)',
+                        maxWidth: '50%',
+                        height: 'auto'
                       }}
                       onMouseOver={(e) => {
                         e.currentTarget.style.filter = 'none'
