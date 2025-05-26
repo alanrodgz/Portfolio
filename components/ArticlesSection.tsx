@@ -1,109 +1,108 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Calendar, Clock } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
 export default function ArticlesSection() {
   const articles = [
     {
-      title: "Building Wingman AI",
-      description: "Deep dive into creating an AI-powered dating assistant that helps users craft better conversations and improve their dating experience through intelligent suggestions and personality analysis.",
-      url: "https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9",
+      title: "Building Wingman AI: From Concept to Real-World Impact",
+      description: "A deep dive into creating an AI-powered dating assistant that helps users improve their conversation skills and build meaningful connections through intelligent coaching.",
       date: "2024",
-      readTime: "8 min read",
+      link: "https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9",
       tags: ["AI Agents", "LLM Integration", "Product Development"]
     }
   ]
 
   return (
-    <section id="articles" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+    <section id="articles" className="py-24">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 
+          className="text-2xl md:text-3xl font-bold mb-8 flex items-center"
+          style={{ color: 'var(--lightest-slate)' }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Featured <span className="gradient-text">Articles</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Insights and learnings from building autonomous AI systems
-          </p>
-        </motion.div>
+          <span 
+            className="font-mono text-lg mr-2"
+            style={{ color: 'var(--green)' }}
+          >
+            02.
+          </span>
+          Some Things I've Written
+          <div 
+            className="ml-6 h-px flex-1 max-w-xs"
+            style={{ backgroundColor: 'var(--lightest-navy)' }}
+          ></div>
+        </h2>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <div className="space-y-8">
           {articles.map((article, index) => (
-            <motion.div
-              key={article.title}
+            <motion.article
+              key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="group"
             >
-              <div className="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition-all duration-300 h-full">
-                <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
-                  <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {article.date}
+              <a
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-6 rounded transition-all duration-300 hover:translate-y-[-2px]"
+                style={{ backgroundColor: 'var(--light-navy)' }}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <p 
+                      className="font-mono text-sm mb-2"
+                      style={{ color: 'var(--green)' }}
+                    >
+                      {article.date}
+                    </p>
+                    <h3 
+                      className="text-xl font-semibold mb-3 group-hover:text-green-400 transition-colors"
+                      style={{ color: 'var(--lightest-slate)' }}
+                    >
+                      {article.title}
+                    </h3>
                   </div>
-                  <div className="flex items-center">
-                    <Clock className="h-4 w-4 mr-1" />
-                    {article.readTime}
-                  </div>
+                  <ExternalLink 
+                    className="h-5 w-5 ml-4 flex-shrink-0 group-hover:text-green-400 transition-colors"
+                    style={{ color: 'var(--slate)' }}
+                  />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {article.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+                <p 
+                  className="text-base leading-relaxed mb-4"
+                  style={{ color: 'var(--slate)' }}
+                >
                   {article.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {article.tags.map((tag) => (
+                <div className="flex flex-wrap gap-3">
+                  {article.tags.map((tag, tagIndex) => (
                     <span
-                      key={tag}
-                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+                      key={tagIndex}
+                      className="font-mono text-xs px-3 py-1 rounded"
+                      style={{ 
+                        backgroundColor: 'var(--green-tint)',
+                        color: 'var(--green)'
+                      }}
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
-                <a
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
-                >
-                  Read Article
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </div>
-            </motion.div>
+              </a>
+            </motion.article>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <a
-            href="https://medium.com/@alanrodriigueez"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 inline-block"
-          >
-            View All Articles on Medium
-          </a>
-        </motion.div>
-      </div>
+      </motion.div>
     </section>
   )
 }
