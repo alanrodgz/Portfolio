@@ -12,7 +12,7 @@ export default function Footer() {
 
   const quickLinks = [
     { label: "About", id: "about" },
-    { label: "Skills", id: "skills" },
+    { label: "Articles", id: "articles" },
     { label: "Projects", id: "projects" },
     { label: "Contact", id: "contact" },
   ]
@@ -25,10 +25,8 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
-    { icon: Github, href: "#", ariaLabel: "GitHub" },
-    { icon: Twitter, href: "#", ariaLabel: "Twitter" },
-    { icon: Rss, href: "#", ariaLabel: "Blog RSS" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/alan-r/", ariaLabel: "LinkedIn" },
+    { icon: Github, href: "https://github.com/alanrodgz", ariaLabel: "GitHub" },
   ]
 
   return (
@@ -37,11 +35,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center mb-4">
-              <span className="text-3xl font-bold gradient-text">Alex Chen</span>
+              <span className="text-3xl font-bold gradient-text">Alan Rodriguez</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              AI Agent Engineer passionate about building intelligent systems
-              that bridge human needs with artificial intelligence capabilities.
+              AI Agentic Engineer focused on designing autonomous systems that reason, plan, and act toward complex goals with real-world impact.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (

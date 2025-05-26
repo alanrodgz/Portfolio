@@ -68,10 +68,8 @@ export default function ContactSection() {
   ]
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", color: "bg-blue-600 hover:bg-blue-700" },
-    { icon: Github, href: "#", color: "bg-gray-800 hover:bg-gray-900" },
-    { icon: Twitter, href: "#", color: "bg-blue-400 hover:bg-blue-500" },
-    { icon: Rss, href: "#", color: "bg-orange-500 hover:bg-orange-600" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/alan-r/", color: "bg-blue-600 hover:bg-blue-700" },
+    { icon: Github, href: "https://github.com/alanrodgz", color: "bg-gray-800 hover:bg-gray-900" },
   ]
 
   return (

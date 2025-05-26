@@ -6,34 +6,16 @@ import { ArrowRight, Github, ExternalLink } from "lucide-react"
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Multi-Agent Customer Service",
+      title: "AI Wingman - Smart Dating Assistant",
       description:
-        "Intelligent customer service system with specialized agents for different domains, achieving 95% resolution rate and reducing response time by 60%.",
+        "An intelligent AI-powered dating assistant that helps users craft better conversations and improve their dating experience. Features personality analysis, conversation suggestions, and real-time coaching to enhance meaningful connections.",
       image:
-        "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "AI chatbot interface with conversation bubbles",
-      tags: ["LangChain", "OpenAI", "FastAPI"],
+        "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "AI dating assistant interface showing conversation suggestions",
+      tags: ["AI Agents", "LLM Integration", "Real-time Analysis"],
       tagColors: ["bg-blue-100 text-blue-800", "bg-purple-100 text-purple-800", "bg-green-100 text-green-800"],
-    },
-    {
-      title: "Intelligent Document Processor",
-      description:
-        "AI-powered document analysis system that extracts insights from complex documents, reducing manual processing time by 80% and improving accuracy to 99.2%.",
-      image:
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Document analysis dashboard with charts and graphs",
-      tags: ["Computer Vision", "NLP", "RAG"],
-      tagColors: ["bg-blue-100 text-blue-800", "bg-purple-100 text-purple-800", "bg-green-100 text-green-800"],
-    },
-    {
-      title: "Autonomous Research Agent",
-      description:
-        "Self-directed research agent that gathers, analyzes, and synthesizes information from multiple sources, producing comprehensive research reports automatically.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Data visualization dashboard with charts and analytics",
-      tags: ["AutoGen", "Web Scraping", "Data Analysis"],
-      tagColors: ["bg-blue-100 text-blue-800", "bg-purple-100 text-purple-800", "bg-green-100 text-green-800"],
+      website: "https://www.aismartdating.com",
+      article: "https://medium.com/@alanrodriigueez/building-wingman-ai-8671adfc60a9"
     },
   ]
 
@@ -96,17 +78,25 @@ export default function ProjectsSection() {
                     {project.description}
                   </p>
                   <div className="flex items-center justify-between">
-                    <button className="text-blue-600 hover:text-blue-700 font-semibold flex items-center">
-                      View Details
+                    <a
+                      href={project.article}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 font-semibold flex items-center"
+                    >
+                      Read Article
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </button>
+                    </a>
                     <div className="flex gap-2">
-                      <button className="text-gray-400 hover:text-gray-600">
-                        <Github className="h-4 w-4" />
-                      </button>
-                      <button className="text-gray-400 hover:text-gray-600">
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-gray-600"
+                        title="Visit Website"
+                      >
                         <ExternalLink className="h-4 w-4" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
