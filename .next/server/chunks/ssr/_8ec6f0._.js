@@ -264,7 +264,9 @@ function Navigation() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/resume.pdf",
+                                    href: "/Alan-Rodriguez-Resume.pdf",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
                                     className: "px-4 py-2 border border-green-400 rounded text-green-400 hover:bg-green-400/10 transition-all",
                                     style: {
                                         fontFamily: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace',
@@ -559,8 +561,22 @@ function AboutSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-4",
-                                children: "Hello! My name is Alan and I enjoy creating things that live on the internet. My interest in AI development started back in 2020 when I decided to try building autonomous systems — turns out hacking together custom AI agents taught me a lot about machine learning and human-computer interaction!"
-                            }, void 0, false, {
+                                children: [
+                                    "Hello! I'm Alan, and I enjoy creating",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "intelligent systems"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 15
+                                    }, this),
+                                    " that live on the internet — especially ones that think, learn, and act autonomously."
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/AboutSection.tsx",
                                 lineNumber: 39,
                                 columnNumber: 13
@@ -568,52 +584,99 @@ function AboutSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-4",
                                 children: [
-                                    "Fast-forward to today, and I've had the privilege of building software for an",
+                                    "My journey into tech began during my undergraduate studies in",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "Computer Science"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 15
+                                    }, this),
+                                    " at",
                                     ' ',
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://www.aismartdating.com",
+                                        href: "https://www.sjsu.edu",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         style: {
                                             color: 'var(--green)'
                                         },
-                                        children: "AI-powered dating platform"
+                                        children: "San José State University"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this),
-                                    ", a",
+                                    ", where I developed a strong foundation in systems programming and software design. In 2020, I became fascinated with building",
                                     ' ',
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         style: {
                                             color: 'var(--green)'
                                         },
-                                        children: "research laboratory"
+                                        children: "autonomous agents"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
                                         lineNumber: 58,
                                         columnNumber: 15
                                     }, this),
-                                    ", and a",
+                                    " — tinkering with custom AI systems taught me more than just machine learning; it opened up a whole new way of thinking about how humans and machines interact."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/AboutSection.tsx",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-4",
+                                children: [
+                                    "Fast-forward to now, I'm a graduate student in",
                                     ' ',
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         style: {
                                             color: 'var(--green)'
                                         },
-                                        children: "digital product studio"
+                                        children: "Statistical Data Science"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
                                         lineNumber: 65,
                                         columnNumber: 15
                                     }, this),
-                                    ". My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients."
+                                    " at",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.sfsu.edu",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "San Francisco State University"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", where I'm deepening my skills in probabilistic modeling, decision systems, and simulation. This work directly supports my path as an aspiring",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "AI Agent Engineer"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 76,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", with a focus on building agents that not only act intelligently but collaborate meaningfully with humans."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 46,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -631,22 +694,57 @@ function AboutSection() {
                                         children: "published an article"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this),
                                     ' ',
-                                    "about building Wingman AI, which covers the technical and philosophical challenges of creating AI systems that enhance human relationships."
+                                    "about building",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.aismartdating.com",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "Wingman AI"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", which dives into the technical and philosophical challenges of designing AI systems that enhance human relationships — not replace them. It's part of my broader mission: to build AI that",
+                                    ' ',
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        style: {
+                                            color: 'var(--green)'
+                                        },
+                                        children: "augments the human experience"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AboutSection.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 15
+                                    }, this),
+                                    ", not automate it away."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 75,
+                                lineNumber: 80,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-4",
+                                children: "Whether it's optimizing last-mile delivery routes through simulation or crafting emotionally-aware agents, I'm driven by one question: How can we build AI that truly serves humanity?"
+                            }, void 0, false, {
+                                fileName: "[project]/components/AboutSection.tsx",
+                                lineNumber: 105,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Here are a few technologies I've been working with recently:"
                             }, void 0, false, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 89,
+                                lineNumber: 111,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -667,19 +765,19 @@ function AboutSection() {
                                                 children: "▹"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutSection.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 124,
                                                 columnNumber: 19
                                             }, this),
                                             tech
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/components/AboutSection.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 115,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/AboutSection.tsx",
-                                lineNumber: 91,
+                                lineNumber: 113,
                                 columnNumber: 13
                             }, this)
                         ]

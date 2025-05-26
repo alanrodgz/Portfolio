@@ -37,39 +37,44 @@ export default function AboutSection() {
         <div>
           <div style={{ color: 'var(--slate)', fontSize: '20px' }}>
             <p className="mb-4">
-              Hello! My name is Alan and I enjoy creating things that live on the internet. 
-              My interest in AI development started back in 2020 when I decided to try 
-              building autonomous systems — turns out hacking together custom AI agents 
-              taught me a lot about machine learning and human-computer interaction!
+              Hello! I'm Alan, and I enjoy creating{' '}
+              <span style={{ color: 'var(--green)' }}>intelligent systems</span> that live on the internet — 
+              especially ones that think, learn, and act autonomously.
             </p>
             
             <p className="mb-4">
-              Fast-forward to today, and I've had the privilege of building software for 
-              an{' '}
+              My journey into tech began during my undergraduate studies in{' '}
+              <span style={{ color: 'var(--green)' }}>Computer Science</span> at{' '}
               <a 
-                href="https://www.aismartdating.com" 
+                href="https://www.sjsu.edu" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ color: 'var(--green)' }}
               >
-                AI-powered dating platform
+                San José State University
               </a>
-              , a{' '}
+              , where I developed a strong foundation in systems programming and software design. 
+              In 2020, I became fascinated with building{' '}
+              <span style={{ color: 'var(--green)' }}>autonomous agents</span> — 
+              tinkering with custom AI systems taught me more than just machine learning; 
+              it opened up a whole new way of thinking about how humans and machines interact.
+            </p>
+            
+            <p className="mb-4">
+              Fast-forward to now, I'm a graduate student in{' '}
+              <span style={{ color: 'var(--green)' }}>Statistical Data Science</span> at{' '}
               <a 
-                href="#" 
+                href="https://www.sfsu.edu" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 style={{ color: 'var(--green)' }}
               >
-                research laboratory
+                San Francisco State University
               </a>
-              , and a{' '}
-              <a 
-                href="#" 
-                style={{ color: 'var(--green)' }}
-              >
-                digital product studio
-              </a>
-              . My main focus these days is building accessible, inclusive products and 
-              digital experiences for a variety of clients.
+              , where I'm deepening my skills in probabilistic modeling, decision systems, and simulation. 
+              This work directly supports my path as an aspiring{' '}
+              <span style={{ color: 'var(--green)' }}>AI Agent Engineer</span>, 
+              with a focus on building agents that not only act intelligently but collaborate meaningfully with humans.
             </p>
             
             <p className="mb-4">
@@ -82,8 +87,25 @@ export default function AboutSection() {
               >
                 published an article
               </a>
-              {' '}about building Wingman AI, which covers the technical and philosophical 
-              challenges of creating AI systems that enhance human relationships.
+              {' '}about building{' '}
+              <a 
+                href="https://www.aismartdating.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: 'var(--green)' }}
+              >
+                Wingman AI
+              </a>
+              , which dives into the technical and philosophical challenges of designing AI systems 
+              that enhance human relationships — not replace them. It's part of my broader mission: 
+              to build AI that{' '}
+              <span style={{ color: 'var(--green)' }}>augments the human experience</span>, not automate it away.
+            </p>
+            
+            <p className="mb-4">
+              Whether it's optimizing last-mile delivery routes through simulation or crafting 
+              emotionally-aware agents, I'm driven by one question: How can we build AI that 
+              truly serves humanity?
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

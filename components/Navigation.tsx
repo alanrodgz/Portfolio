@@ -103,7 +103,9 @@ export default function Navigation() {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <a
-              href="/resume.pdf"
+              href="/Alan-Rodriguez-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 border border-green-400 rounded text-green-400 hover:bg-green-400/10 transition-all"
               style={{
                 fontFamily: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace',
